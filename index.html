@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Lista de tarefas</title>
+</head>
+<body>
+    <header class="menu"> <!--Menu -->
+        <a href="https://ebaconline.com.br/" target="_blank"> <img src="./images/Logo_EBAC.png" alt=""></a>
+        <h1>EBAC</h1>
+        <a href="https://ebaconline.com.br/" target="_blank" class="acessar_site">Acessar site</a>
+    </header>
+
+    <section class="cadastro_de_contatos"> <!--Seção Cadastro -->
+        
+        <h1>Lista de tarefas</h1>
+        <div class="painel_contatos">
+            
+            <h3>Formulário</h3>
+            <form id="form_contato"> <!--Formulario de Cadastro -->
+                <label>Nova Tarefa
+                    <input type="text" id="form_tarefa" placeholder="Digite a tarefa" required>
+                </label>         
+
+                <button type="submit" id="form_enviar">Cadastrar</button>
+            </form>
+
+            <div class="painel_tabela"> <!--Tabela Contato -->
+                <h2>Tarefas:</h2>
+                <ol>
+                    <!-- <li>
+                        <li>
+                            <span id="item_tarefa">Tarefa 1</span>
+                        </li>
+                    </li> -->
+                </ol>
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #F0F0F0;
+    display: flex;
+    
+}
+
+/*================== Menu ==================*/
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E2E2E2;
+    height: 100vh;
+    width: 400px;
+    padding: 20px;
+}
+
+header img{
+    width: 180px;
+}
+
+header h1{
+    font-size: 40px;
+    width: 180px;
+    text-align: center;
+    color: #323b8b;
+    font-weight: bold;
+}
+
+.acessar_site{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #323b8b;
+    /* background-color: #4E5CD6; */
+    color: #fff;
+    height: 40px;
+    width: 180px;
+    font-size: 24px;
+    border-radius: 5px; 
+}
+
+.acessar_site:hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #4551ba;
+}
+
+
+
+/*================== Seção de Cadastro ==================*/
+
+.cadastro_de_contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: 1 0;
+    width: 100%;
+    font-size: 24px;
+}
+
+.cadastro_de_contatos h1{
+    color:#323b8b;
+}
+
+form{
+    display: flex;
+    align-items: end;
+    overflow-y: auto;
+    font-size: 15px;
+    padding: 5px 0px;
+    
+}
+
+form input{
+    display: flex;
+    height: 35px;
+    width: 300px;
+}
+
+form button{
+    height: 35px;
+    width: 100px;
+    font-size: 18px;
+    background-color: #05c50b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+
+form button:hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #3bd540;
+    cursor: pointer;
+}
+
+
+.painel_contatos{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 70%;
+    height: 80%;
+    color: #9F9FA5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+.painel_contatos h3{
+    border-bottom: 1px solid #9F9FA5;
+    width: 180px;
+    
+}
+
+label{
+    display: block;
+}
+
+
+/*================== Painel Tarefas ==================*/
+
+.painel_tabela{
+    background-color: #F0F0F0;
+    height: 70%;
+    border-radius: 3px;
+    padding: 0px 40px;
+    overflow: auto;
+}
+
+.painel_tabela h2{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #323b8b;
+    border-bottom: 1px solid #323b8b;
+    width: 100%;
+    text-align: center;
+}
+
+li{
+    cursor: pointer;
+    font-size: 20px;
+    color: #323232;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+
+
+
+
+/*================== Responsividade ==================*/
+
+
+@media(max-width: 1320px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        width: 100%;
+        margin-bottom: 10px;
+        
+    }
+    header h1{
+        width: 100%;
+        font-size: 30px;
+    }
+
+    form{
+        height: 70px;
+        margin: 20px 0;
+    }
+
+    .painel_tabela{
+        height: 420px;
+    }  
+}
+
+@media(max-width: 900px){
+
+    form{
+        height: 130px;
+        margin: 5px 0;
+    }
+
+    .cadastro_de_contatos{
+        align-items: center;
+        padding: 10px;
+        width: 320px;
+        
+    }
+
+    .cadastro_de_contatos h1{
+        font-size: 30px;
+    }
+
+    #form_contato{
+        display: block;
+        margin-bottom: 1px;
+        
+    }
+
+    .painel_contatos{
+        width: 80%;
+        
+    }
+
+    .painel_tabela{
+        height: 250px;
+    }
+
+    .acessar_site{
+        font-size: 12px;
+    }
+
+    form label{
+        margin: 10px 0;
+    }
+
+    form input{
+        width: 100%;
+    }
+
+    header img{
+        width: 120px;
+    }
+
+    header h1{
+        font-size: 24px;
+    }
+}
