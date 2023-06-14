@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cadastro de Contatos</title>
+</head>
+<body>
+    <header class="menu"> <!--Menu -->
+        <a href="https://ebaconline.com.br/" target="_blank"> <img src="./images/Logo_EBAC.png" alt=""></a>
+        <h1>Contatos: EBAC</h1>
+        <a href="https://ebaconline.com.br/" target="_blank" class="acessar_site">Acessar site</a>
+    </header>
+
+    <section class="cadastro_de_contatos"> <!--Seção Cadastro -->
+        <h1>Cadastro de Contatos</h1>
+        <div class="painel_contatos">
+            <h3>Formulário</h3>
+
+            <form id="form_contato"> <!--Formulario de Cadastro -->
+                <label>Nome
+                    <input type="text" id="formNome" placeholder="Digite o nome" required>
+                </label>
+                
+                <label>Telefone
+                    <input type="tel" id="formTelefone" pattern="[0-9]{2} [9]{1}[0-9]{8}" placeholder="xx 9xxxxxxxx" required>
+                </label>
+                
+                
+
+                <button type="submit" id="form_enviar">Cadastrar</button>
+            </form>
+            <div class="painel_tabela"> <!--Tabela Contato -->
+                <table cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>NOME COMPLETO</th>
+                            <th>TELEFONE</th>
+                    
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td>nome</td>
+                            <td>telefone</td>
+                        </tr> -->
+                        
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>QTD</td>
+                            <td id="qtd_registros">0</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
