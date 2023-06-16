@@ -1,0 +1,318 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.layout{
+    max-width: 1024px;
+    width: 1024px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3967d6;
+    color: #fff;
+    height: 70px;
+    width: 100%;
+    margin-bottom: 32px;
+    position: sticky;
+    top: 0;
+}
+
+header h1{
+    font-style: italic;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+main{
+    display: flex;
+    margin-bottom: 64px;
+
+}
+
+main img{
+    height: 300px;
+    margin-right: 32px;
+}
+
+main p{
+    width: 100%;
+}
+
+
+
+.Conteudo h3{
+    padding: 10px 0;
+    margin-bottom: 32px;
+    border-bottom: 2px solid blue;
+    font-style: italic;
+    font-weight: bold;
+    color: #3967d6;
+    display: block;
+}
+
+.secao_produtos{
+    margin-bottom: 30px;
+}
+
+.container_produtos{
+    display: grid;
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+    column-gap: 2%;
+    width: 100%;
+}
+
+.itens_produtos a img{
+    height: 200px;
+    width: 100%;
+}
+
+.itens_produtos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 380px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.itens_produtos h4{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.itens_produtos button{
+    height: 40px;
+    cursor: pointer;
+    background-color: #3967d6;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.itens_produtos p{
+    height: 80px;
+    padding: 5px 0;
+}
+
+.itens_produtos span{
+    font-weight: bold;
+    color:blue;
+}
+
+.itens_produtos button:hover{
+    background-color: #4a74d5;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    background-color: #3967d6;
+}
+
+
+/*=============== Responsividade ===================== */
+
+
+/*====================== Mobile ====================*/
+
+@media screen and (max-width: 767px) {
+    
+    /*======= Menu ======= */
+    header{
+        width: 100%;
+    }
+
+    header h1{
+        width: 30%;
+        font-size: 24px;
+        
+    }
+
+    .menu{
+        width: 90%;
+    }
+
+    .main{
+        display: block;
+    }
+
+    .layout{
+        max-width: 320px;
+        width: 100%;
+    }
+
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        
+    }
+
+    .menu ul a{
+        color: #fff;
+    }
+    
+
+
+    /*======= Conteudo ======= */
+    main{
+        display: block;
+    }
+
+    main img{
+        height: 200px;
+        width: 100%;
+        margin-right: 32px;
+    }
+
+    .Conteudo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secao_produtos{
+        width: 100%;
+    }
+
+
+    .container_produtos{
+        width: 100%;
+    }
+
+    .container_produtos{
+        display: grid;
+        grid-template-columns: 100%;
+        width: 100%;
+    }
+
+    .itens_produtos{
+        margin-bottom: 64px;
+    }
+}
+
+
+/*====================== Ipad ====================*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /*======= Menu ======= */
+    header{
+        width: 100%;
+    }
+
+    header h1{
+        width: 30%;
+        font-size: 24px;
+        
+    }
+
+    .menu{
+        width: 90%;
+    }
+
+    .main{
+        display: block;
+    }
+
+    .layout{
+        max-width: 768px;
+        width: 80%;
+    }
+
+    .menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 200px;
+    }
+
+    .menu ul a{
+        color: #fff;
+    }
+    
+
+
+    /*======= Conteudo ======= */
+    main{
+        display: block;
+    }
+
+    main img{
+        height: 400px;
+        width: 100%;
+        margin-right: 32px;
+    }
+
+    .Conteudo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secao_produtos{
+        width: 100%;
+    }
+
+
+    .container_produtos{
+        width: 100%px;
+    }
+
+    .container_produtos{
+        display: grid;
+        grid-template-columns: 49% 49%;
+        column-gap: 2%;
+        width: 100%;
+    }
+
+    .itens_produtos{
+        margin-bottom: 64px;
+    }
+}
+
+ /*======= Layout em modo Paisagem ======= */
+@media screen and (orientation: landscape ) and (min-width: 768px) {
+    .menu ul a{
+        color: #fff;
+    }
+
+    .container_produtos{
+        display: grid;
+        grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+        column-gap: 2%;
+        width: 100%;
+    }
+}
