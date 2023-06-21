@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- link Arquivo css local -->
+    <link rel="stylesheet" href="./style.css">
+
+
+    <!-- link CDN Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css
+    "> -->
+    <!-- link Bootstrap css local -->
+    <link rel="stylesheet" href="./lib/Bootstrap.min.css">
+
+
+    <!-- link CDN jQuery carousel -->
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
+
+    <!-- Fontes personalizadas google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  <!-- Fonte Roboto -->
+
+    <!-- https://via.placeholder.com/100x100 -->
+    <title>Planet Filmes</title>
+</head>
+<body>
+    <header id="cabecalho"> <!-- Menu -->
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="#carousel-exemplo"><img src="./images/Filmes_logo.jpg" alt=""></a>
+                <h1>Planet Filmes</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#lancamentos">Lançamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#destaques">Destaques</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#favoritos">Favoritos</a>
+                        </li>
+                    </ul>
+                </nav>              
+            </div>
+        </div>
+    </header>
+   
+    <div class="container"> <!-- Carousel Imagens -->
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="./images/Batman.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>Batman</h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="./images/Avengers_Infinity_War.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>Avengers</h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="./images/Star_Wars.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>Star Wars</h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="./images/the-walking-dead-11-season.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>The Walking Dead</h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="./images/Avatar 2.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>Avatar 2</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev"  class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next"  class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="4"></button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" data-bs-spy="scroll" data-bs-target="#cabeçalho"> <!-- Conteúdo Lançamentos -->
+        <h3 id="lancamentos">Lançamentos</h3>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 post">
+                <article class="card"> <!-- Cartão -->
+                    <header class="card-header">
+                        Wakanda Forever
+                    </header>
+                    <img src="./images/wakanda-para-sempre-90x60-cm-poster-geek.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fugit totam reprehenderit.
+                        </p>
+                        <a href="#" class="btn btn-primary">Assistir</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>10/08/2023 às 19:00</time>
+                    </footer>
+                </article>
+            </div>
+        
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 post">
+                <article class="card"> <!-- Cartão -->
+                    <header class="card-header">
+                        Free Guy
+                    </header>
+                    <img src="/images/ELJhijZUEAA2MAi-scaled.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fugit totam reprehenderit.
+                        </p>
+                        <a href="#" class="btn btn-primary">Assistir</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>10/08/2023 às 19:00</time>
+                    </footer>
+                </article>
+            </div>
+        
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 post">
+                <article class="card"> <!-- Cartão -->
+                    <header class="card-header">
+                        Elementos
+                    </header>
+                    <img src="./images/subdivision_vmje.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fugit totam reprehenderit.
+                        </p>
+                        <a href="#" class="btn btn-primary">Assistir</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>10/08/2023 às 19:00</time>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" data-bs-spy="scroll" data-bs-target="#cabeçalho"> <!-- Conteúdo Destaques -->
+        <h3 id="destaques">Destaques</h3>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 post">
+                <article class="card"> <!-- Cartão -->
+                    <header class="card-header">
+                        Star Trek
+                    </header>
+                    <img src="./images/StarTrekGb140911-1.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fugit totam reprehenderit.
+                        </p>
+                        <a href="#" class="btn btn-primary">Assistir</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>10/08/2023 às 19:00</time>
+                    </footer>
+                </article>
+            </div>
+        
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 post">
+                <article class="card"> <!-- Cartão -->
+                    <header class="card-header">
+                        Enola Holmes
+                    </header>
+                    <img src="./images/enola-holmes-20220113201349.webp" alt="">
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fugit totam reprehenderit.
+                        </p>
+                        <a href="#" class="btn btn-primary">Assistir</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>10/08/2023 às 19:00</time>
+                    </footer>
+                </article>
+            </div>
+        
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 post">
+                <article class="card"> <!-- Cartão -->
+                    <header class="card-header">
+                        Harry Potter e a da Ordem Fenix
+                    </header>
+                    <img src="./images/Harry_Potter_e_a_Ordem_da_F3Fster.webp" alt="">
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fugit totam reprehenderit.
+                        </p>
+                        <a href="#" class="btn btn-primary">Assistir</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>10/08/2023 às 19:00</time>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div  class="container" data-bs-spy="scroll" data-bs-target="#cabeçalho"> <!-- Conteúdo Favoritos -->
+        <h3 id="favoritos">Favoritos</h3>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 post">
+                <article class="card"> <!-- Cartão -->
+                    <header class="card-header">
+                        Senho dos Aneis
+                    </header>
+                    <img src="./images/Senhor dos Aneis.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fugit totam reprehenderit.
+                        </p>
+                        <a href="#" class="btn btn-primary">Assistir</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>10/08/2023 às 19:00</time>
+                    </footer>
+                </article>
+            </div>
+        
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 post">
+                <article class="card"> <!-- Cartão -->
+                    <header class="card-header">
+                        Star Trek
+                    </header>
+                    <img src="./images/StarTrekGb140911-1.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fugit totam reprehenderit.
+                        </p>
+                        <a href="#" class="btn btn-primary">Assistir</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>10/08/2023 às 19:00</time>
+                    </footer>
+                </article>
+            </div>
+        
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 post">
+                <article class="card"> <!-- Cartão -->
+                    <header class="card-header">
+                        Transformes
+                    </header>
+                    <img src="./images/Affiche_transformers_rotb.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fugit totam reprehenderit.
+                        </p>
+                        <a href="#" class="btn btn-primary">Assistir</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>10/08/2023 às 19:00</time>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </div>
+      
+
+    <footer>
+        <div class="container">
+            <p>&copy; Todos os direitos reservados</p>
+            <ul>
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Script CDN Bootstrap -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="./lib/Bootstrap.bundle.min.js"></script>
+   
+    <!-- Script jquery -->
+   <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> -->
+
+    <!-- Script jquery carousel Slick -->
+   <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+   <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+   <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+
+    <!-- Script jquery carousel Mascaras input Validação -->
+   <!-- <script src="./lib/jquery.mask.min.js"></script> -->
+   <!-- <script src="./lib/jquery.validate.min.js"></script> -->
+   <!-- <script src="./lib/messages_pt_BR.min.js"></script> -->
+
+    
+    <!-- Script arquivo JS -->
+   <script src="./script.js"></script>
+</body>
+</html>
