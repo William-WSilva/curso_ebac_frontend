@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro Alunos Nota Min</title>
+    <link rel="stylesheet" href="./src/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="secao_filtro">
+            <h1>Alunos com nota mínima:</h1>
+            <input id="notaMin" type="number" value="6" min="0">
+            <button type="button" id="botaoFiltrar">FILTRAR</button>
+        </div>
+        <div class="qtdAluno">
+            <span id="qtdAlunosValor">50 Alunos</span>
+        </div>
+        <ul id="secaoAlunos">
+        </ul>
+    </div>
+    
+    <script src="./dist/scripts/script.js"></script>
+</body>
+</html>
